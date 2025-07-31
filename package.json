@@ -7,8 +7,9 @@
     "start": "vite --port $PORT",
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "scalingo-postbuild": "npm ci --include=dev && vite build && npm prune --production"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

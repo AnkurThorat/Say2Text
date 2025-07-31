@@ -10,6 +10,7 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: process.env.PORT || 3000,
+    allowedHosts: ["say2text.osc-fr1.scalingo.io", "localhost", "127.0.0.1"],
   },
   build: {
     outDir: "dist",
